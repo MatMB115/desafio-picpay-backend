@@ -2,10 +2,7 @@ package com.simplifiedpicpay.domain.transaction;
 
 import com.simplifiedpicpay.domain.user.User;
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.EqualsAndHashCode;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 import org.springframework.boot.autoconfigure.web.WebProperties;
 
 import java.math.BigDecimal;
@@ -17,6 +14,7 @@ import java.time.LocalDateTime;
 @Getter
 @Setter
 @AllArgsConstructor
+@NoArgsConstructor
 @EqualsAndHashCode(of = "id")
 public class Transaction {
     @Id
@@ -35,7 +33,4 @@ public class Transaction {
 
     private LocalDateTime timestamps;
 
-    public Transaction() {
-
-    }
 }
