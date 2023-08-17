@@ -4,18 +4,16 @@ import com.simplifiedpicpay.domain.dtos.NotificationDTO;
 import com.simplifiedpicpay.domain.user.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
 @Service
 public class NotifyService {
-    @Autowired
-    private RestTemplate restTemplate;
+    //@Autowired
+    //private RestTemplate restTemplate;
 
-    @Value("${picpay.notify}")
-    private String notifyUrl;
+    //@Value("${picpay.notify}")
+    //private String notifyUrl;
 
     public void sendNotification(User user, String message) throws Exception {
         String email = user.getEmail();

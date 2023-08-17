@@ -3,7 +3,6 @@ package com.simplifiedpicpay.domain.transaction;
 import com.simplifiedpicpay.domain.user.User;
 import jakarta.persistence.*;
 import lombok.*;
-import org.springframework.boot.autoconfigure.web.WebProperties;
 
 import java.math.BigDecimal;
 import java.math.BigInteger;

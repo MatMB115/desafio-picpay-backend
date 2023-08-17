@@ -1,7 +1,6 @@
 package com.simplifiedpicpay.domain.infra;
 
 import com.simplifiedpicpay.domain.dtos.ExceptionDTO;
-import com.simplifiedpicpay.domain.dtos.TransactionDTO;
 import jakarta.persistence.EntityNotFoundException;
 import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.http.ResponseEntity;
